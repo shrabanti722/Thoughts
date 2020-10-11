@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<div class="ui main text container segment">
+      <div class="ui huge header"> Edit <%=thought.title%></div>
+      <form class = "ui form" action="/thoughts/<%=thouhgt._id%>?_method=PUT" method="POST">
+            <div class="field">
+                  <label>Title</label>
+                  <input type="text" name="thouhgt[title]" value = <%=thought.title%>>
+            </div>
+            <div class="field">
+                  <label>Image</label>
+                  <input type="text" name="thought[image]" value = <%=thought.image%>>
+            </div>
+            <div class="field">
+                  <label> Thought </label>
+                  <textarea name="thought[body]"> <%=thought.body%></textarea>
+            </div>
+             <input class="ui violet inverted button " type="submit">
+      </form>
+</div>
+<%- include("partials/footer") %>

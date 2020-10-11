@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+<div class="ui main text container segment">
+      <div class="ui huge header">New Thought</div>
+      <form class = "ui form" action="/thoughts" method="POST">
+            <div class="field">
+                  <label>Title</label>
+                  <input type="text" name="thought[title]" placeholder="title">
+            </div>
+            <div class="field">
+                  <label>Image</label>
+                  <input type="text" name="thought[image]" placeholder = "image">
+            </div>
+            <div class="field">
+                  <label> Thought Content</label>
+                  <textarea name="thought[body]" placeholder = "thought goes here"></textarea>
+            </div>
+             <input class="ui violet inverted button " type="submit">
+      </form>
+</div>
+<%- include("partials/footer") %>
