@@ -1,1 +1,1 @@
-A RESTful Web App to share your thoughts.
+**A RESTful Web App to share your thoughts.**
